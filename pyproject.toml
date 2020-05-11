@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "npml"
+version = "0.1.0"
+description = "Machine learning algorithms implemented, with Numpy."
+authors = ["Queensferry <queensferry.me@gmail.com>"]
+
+[tool.poetry.dependencies]
+numpy = "^1.18.4"
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+ipython = "^7.14.0"
+pylint = "^2.5.2"
+pytest = "^5.2"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
