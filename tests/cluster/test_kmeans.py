@@ -1,5 +1,3 @@
-from io import StringIO
-
 import numpy as np
 
 from npml.cluster.kmeans import KMeans

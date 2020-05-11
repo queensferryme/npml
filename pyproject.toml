@@ -10,13 +10,14 @@ authors = ["Queensferry <queensferry.me@gmail.com>"]
 
 [tool.poetry.dependencies]
 numpy = "^1.18.4"
-python = ">=3.6"
+python = ">=3.6.1"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
 ipython = "^7.14.0"
 pylint = "^2.5.2"
 pytest = "^5.2"
+pre-commit = "^2.3.0"
 
 [[tool.poetry.source]]
 name = "tuna"
