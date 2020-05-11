@@ -1,3 +1,7 @@
+[tool.black]
+line-length = 100
+target-version = ['py36', 'py37', 'py38']
+
 [tool.poetry]
 name = "npml"
 version = "0.1.0"
@@ -6,7 +10,7 @@ authors = ["Queensferry <queensferry.me@gmail.com>"]
 
 [tool.poetry.dependencies]
 numpy = "^1.18.4"
-python = "^3.8"
+python = ">=3.6"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
