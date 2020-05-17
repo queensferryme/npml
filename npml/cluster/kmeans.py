@@ -1,11 +1,15 @@
 import numpy as np
 
+from typing import Tuple
+
 
 class KMeans:
     def __init__(self, k: int):
         self.k = k
 
-    def fit(self, data: np.array, *, epochs: int = 100, tolerance: float = 1e-4):
+    def fit(
+        self, data: np.array, *, epochs: int = 100, tolerance: float = 1e-4
+    ) -> Tuple[np.array, np.array]:
         cluster = np.zeros((data.shape[0],))
         k_mean_vectors = data[np.random.randint(data.shape[0], size=self.k)]
         for _ in range(epochs):
